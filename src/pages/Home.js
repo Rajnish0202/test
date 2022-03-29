@@ -1,25 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
-// const url = "https://api.tvmaze.com/search/shows?q=all";
-
 function Home({ data }) {
-  // const [data, setData] = useState([]);
-  // console.log(data);
-
-  // const fetchData = async () => {
-  //   try {
-  //     const resp = await fetch(url);
-  //     const result = await resp.json();
-  //     setData(result);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
   return (
     <div className='container'>
       {data.map((item) => {
@@ -31,7 +13,6 @@ function Home({ data }) {
             image: { medium },
           },
         } = item;
-        // console.log(id, name, first, second, medium);
         return (
           <div className='movieBox' key={id}>
             <div className='image'>
