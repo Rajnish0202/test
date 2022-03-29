@@ -1,0 +1,274 @@
+.container {
+  padding: 2rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.container .movieBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  background: #eee;
+  border-radius: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
+}
+
+.container .movieBox .image {
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.container .movieBox .image img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.container .movieBox .image:hover img {
+  transform: scale(1.1);
+  transition: all 0.4s linear;
+}
+
+.container .movieBox .content {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background: #14a4a2;
+  color: #fff;
+}
+.container .movieBox .content .name {
+  font-size: 1rem;
+  width: 100%;
+  padding: 0 0.5rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.container .movieBox .content .genres {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 01rem;
+  font-size: 0.8rem;
+}
+
+.container .movieBox .content .button {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+}
+
+.container .movieBox .content .button button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: #333;
+  border: none;
+  outline: none;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.container .movieBox .content .button button:hover {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: all 0.4s linear;
+}
+
+/* MovieInfo Page */
+
+.singleInfo {
+  padding: 2rem 5%;
+  width: 100%;
+  position: relative;
+  z-index: 120;
+}
+
+.singleInfo .singleInfoContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 1rem;
+  background: #eee;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.singleInfo .singleInfoContainer .imageBox {
+  width: 100%;
+  height: auto;
+}
+
+.singleInfo .singleInfoContainer .imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.singleInfo .singleInfoContainer .content p {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.singleInfo .singleInfoContainer .content span {
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.2rem;
+}
+
+.singleInfo .singleInfoContainer .content .btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0.5rem auto;
+}
+
+.singleInfo .singleInfoContainer .content .btnContainer button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: #14a4a2;
+  border: none;
+  outline: none;
+}
+
+.singleInfo .singleInfoContainer .content .btnContainer button:hover {
+  background: transparent;
+  color: #14a4a2;
+  border: 2px solid #14a4a2;
+}
+
+/*ticket form */
+.bookLayout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  z-index: 199;
+}
+
+.bookLayout .bookContainer {
+  display: flex;
+  width: 30rem;
+  height: auto;
+  /* position: absolute; */
+  margin: 5rem auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.bookLayout .bookContainer .heading h3 {
+  font-size: 2.5rem;
+  color: #14a4a2;
+  padding: 0.5rem;
+}
+.bookLayout .bookContainer .orderContent {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bookLayout .bookContainer .orderContent .form-control {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+  border: 2px solid #333;
+  background: #eee;
+  outline: none;
+}
+
+.bookLayout .bookContainer .orderContent .form-control::placeholder {
+  color: #333;
+  font-weight: 600;
+}
+
+.bookLayout .bookContainer .orderContent .btnContainer {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bookLayout .bookContainer .orderContent .btnContainer button {
+  padding: 0.5rem 1rem;
+  background: #14a4a2;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  outline: none;
+  margin-bottom: 0.5rem;
+}
+
+.bookLayout .bookContainer .orderContent .btnContainer button:hover {
+  background: transparent;
+  color: #14a4a2;
+  border: 2px solid #14a4a2;
+}
+
+@media screen and (max-width: 786px) {
+  .singleInfo .singleInfoContainer {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .singleInfo .singleInfoContainer .content p {
+    width: 90%;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .singleInfo .singleInfoContainer .content p span {
+    font-size: 0.8rem;
+    width: 70%;
+    padding-left: 0.5rem;
+  }
+  .singleInfo .singleInfoContainer .content .btnContainer {
+    width: 90%;
+  }
+
+  .bookLayout .bookContainer {
+    width: auto;
+  }
+
+  .bookLayout .bookContainer .orderContent .btnContainer {
+    width: 90%;
+  }
+}
